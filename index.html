@@ -6,7 +6,108 @@
     <title>QARNITA</title>
     <link rel="stylesheet" href="styles.css"> <!-- اتصال به فایل CSS -->
     <style>
-        /* ... سایر استایل‌ها ... */
+        #welcome-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            z-index: 9999;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* رنگ پس‌زمینه */
+        }
+
+        header {
+            background-color: #000000;
+            color: white; /* رنگ متن */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .slider {
+            max-width: 1200px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .slider video {
+            width: 80%; /* تغییر اندازه ویدئو */
+            height: auto; /* حفظ تناسب */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* سایه برای ویدئو */
+            display: block; /* نمایش ویدئو به‌صورت بلوک */
+            margin: 0 auto; /* وسط‌چین کردن ویدئو */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 10px;
+            background-color: rgb(29, 27, 27); /* رنگ پس‌زمینه */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff; /* رنگ عنوان */
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #f9f9f9;
+            border: 1px solid #1c1c1c;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product h3 {
+            color: #333; /* رنگ عنوان محصول */
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: rgb(52, 48, 48); /* رنگ متن فوتر */
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
