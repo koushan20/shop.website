@@ -1,8 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0; /* رنگ پس‌زمینه */
+    font-family: Arial, sans-serif; /* نوع فونت */
+}
+
+h1 {
+    color: #2c3e50; /* رنگ عنوان */
+    text-align: center; /* وسط‌چین کردن عنوان */
+    font-size: 48px; /* اندازه فونت */
+    margin-top: 50px; /* فاصله از بالای صفحه */
+    font-weight: bold; /* ضخامت فونت */
+    text-shadow: 2px 2px 5px rgba(56, 56, 56, 0.3); /* سایه دادن به عنوان */
+    background: linear-gradient(to right, #f42323, #3f016f); /* گرادیانت رنگی */
+    -webkit-background-clip: text; /* این خط برای نمایش گرادیانت فقط در متن */
+    -webkit-text-fill-color: transparent; /* این خط برای مخفی کردن رنگ متن */
+    transition: all 0.3s ease-in-out; /* اضافه کردن انتقال نرم */
+}
+
+h1:hover {
+    color: #be48f5; /* تغییر رنگ هنگام رفتن ماوس روی عنوان */
+    transform: scale(1.3); /* بزرگ‌تر شدن متن */
 }
 
 header {
@@ -35,4 +51,9 @@ footer {
     padding: 10px;
     margin: 10px;
     text-align: center;
+    transition: all 0.3s ease;
 }
+
+.product:hover {
+    transform: scale(1.05); /* بزرگ شدن محصول با رفتن ماوس */
+    box-shad
