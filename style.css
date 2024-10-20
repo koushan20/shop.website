@@ -2,7 +2,6 @@ body {
     background-color: #f0f0f0; /* رنگ پس‌زمینه */
     font-family: Arial, sans-serif; /* نوع فونت */
 }
-
 h1 {
     color: #2c3e50; /* رنگ عنوان */
     text-align: center; /* وسط‌چین کردن عنوان */
@@ -15,12 +14,10 @@ h1 {
     -webkit-text-fill-color: transparent; /* این خط برای مخفی کردن رنگ متن */
     transition: all 0.3s ease-in-out; /* اضافه کردن انتقال نرم */
 }
-
 h1:hover {
     color: #16a085; /* تغییر رنگ هنگام رفتن ماوس روی عنوان */
     transform: scale(1.2); /* بزرگ‌تر شدن متن */
 }
-
 header {
     background: #35424a;
     color: #ffffff;
