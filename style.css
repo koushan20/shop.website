@@ -57,3 +57,36 @@ footer {
 .product:hover {
     transform: scale(1.05); /* بزرگ شدن محصول با رفتن ماوس */
     box-shad
+}
+<style>
+/* انیمیشن اسکرول */
+.fade-in {
+    opacity: 0; /* پنهان کردن در ابتدا */
+    transform: translateY(20px); /* کمی پایین‌تر قرار بگیرد */
+    animation: fadeIn 0.5s forwards; /* انیمیشن fadeIn */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* ظاهر شدن */
+        transform: translateY(0); /* به حالت اولیه برگرد */
+    }
+}
+
+/* افکت هاور */
+.product:hover {
+    transform: scale(1.05); /* بزرگ‌تر شدن محصول */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* سایه بیشتر */
+    transition: all 0.3s ease; /* انتقال نرم */
+}
+
+/* تغییر رنگ پس‌زمینه */
+body {
+    transition: background-color 0.5s ease; /* انتقال نرم */
+}
+
+body.scrolled {
+    background-color: #d9d9d9; /* رنگ جدید پس‌زمینه */
+}
+</style>
+
