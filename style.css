@@ -1,0 +1,89 @@
+body {
+    background-color: #f0f0f0; /* رنگ پس‌زمینه */
+    font-family: Arial, sans-serif; /* نوع فونت */
+}
+h1 {
+    color: #2c3e50; /* رنگ عنوان */
+    text-align: center; /* وسط‌چین کردن عنوان */
+    font-size: 48px; /* اندازه فونت */
+    margin-top: 50px; /* فاصله از بالای صفحه */
+    font-weight: bold; /* ضخامت فونت */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* سایه دادن به عنوان */
+    background: linear-gradient(to right, #f42323, #664ca1); /* گرادیانت رنگی */
+    -webkit-background-clip: text; /* این خط برای نمایش گرادیانت فقط در متن */
+    -webkit-text-fill-color: transparent; /* این خط برای مخفی کردن رنگ متن */
+    transition: all 0.3s ease-in-out; /* اضافه کردن انتقال نرم */
+}
+h1:hover {
+    color: #16a085; /* تغییر رنگ هنگام رفتن ماوس روی عنوان */
+    transform: scale(1.2); /* بزرگ‌تر شدن متن */
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.product {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05); /* بزرگ شدن محصول با رفتن ماوس */
+    box-shad
+}
+<style>
+/* انیمیشن اسکرول */
+.fade-in {
+    opacity: 0; /* پنهان کردن در ابتدا */
+    transform: translateY(20px); /* کمی پایین‌تر قرار بگیرد */
+    animation: fadeIn 0.5s forwards; /* انیمیشن fadeIn */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* ظاهر شدن */
+        transform: translateY(0); /* به حالت اولیه برگرد */
+    }
+}
+
+/* افکت هاور */
+.product:hover {
+    transform: scale(1.05); /* بزرگ‌تر شدن محصول */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* سایه بیشتر */
+    transition: all 0.3s ease; /* انتقال نرم */
+}
+
+/* تغییر رنگ پس‌زمینه */
+body {
+    transition: background-color 0.5s ease; /* انتقال نرم */
+}
+
+body.scrolled {
+    background-color: #d9d9d9; /* رنگ جدید پس‌زمینه */
+}
+</style>
+
